@@ -149,3 +149,79 @@ The STRING network shows a highly connected group of proteins involved mainly in
 4. **AKT1** – A serine/threonine kinase that regulates important processes such as cell growth, proliferation, metabolism, and cell survival. 
 
 5. **MAPK1** – A MAP kinase involved in the MAPK/ERK signaling cascade, regulating processes including cell growth, survival, differentiation, and proliferation.
+
+# IntAct Validation: GFRA1–GDNF
+
+| **Item** | **Information** |
+|---|---|
+| **Protein pair** | GFRA1 – GDNF |
+| **IntAct record** | EBI-15654678 |
+| **Interaction type** | Direct interaction |
+| **Experimental detection method** | ELISA |
+| **Organism** | *Homo sapiens* (human) |
+| **Host organism** | In vitro |
+| **Positive interaction** | Yes |
+| **Publication** | Kjær et al. (2010), "Mammal-restricted elements predispose human RET to folding impairment by HSCR mutations" |
+| **Journal** | Nature Structural & Molecular Biology |
+| **Publication reference** | PMID: 20473317; DOI: [https://doi.org/10.1038/nsmb.1808](https://doi.org/10.1038/nsmb.1808) |
+| **Evidence conclusion** | Supports a direct physical interaction between GFRA1 and GDNF based on a positive ELISA experiment reported in IntAct. |
+
+I chose **GDNF and GFRA1** because GDNF is a ligand and GFRA1 is its co-receptor in the proposed GDNF signaling pathway. The IntAct record shows that the two human proteins have a **direct interaction** supported by a positive **ELISA** experiment. The interaction is associated with the study by Kjær et al. (2010), which investigated human RET and its interactions with components related to GDNF signaling. This provides experimental evidence supporting the proposed **GDNF → GFRA1** ligand-receptor interaction. Since IntAct already provides experimental evidence for this protein pair, examining another pair is not necessary.
+
+# Final model and 150–250 word interpretation
+
+![Final Model](figures/05_final_model.png)
+
+The model illustrates how Schwann cells can support the survival and regeneration of peripheral neurons through GDNF-mediated signaling. In this pathway, the Schwann cell acts as the sender cell, releasing GDNF as a secreted ligand into the extracellular space. The receiving neuron contains the GFRA1/RET receptor complex, which recognizes GDNF and initiates intracellular signaling. Once activated, the receptor can stimulate the SHC1–GRB2–MAPK1 pathway, which is associated with cellular responses involved in neuronal growth and regeneration. At the same time, signaling through PIK3CA and AKT1 promotes cell survival and helps maintain neuronal viability.
+
+The two pathways converge on the biological outcome of neuron survival and axon regrowth. This suggests that GDNF signaling provides both survival and regenerative support to neurons following peripheral nerve injury. The model also demonstrates the importance of communication between Schwann cells and neurons, because Schwann-cell-derived signals can influence intracellular processes in neighboring neurons. Overall, the proposed pathway connects the ligand-receptor interaction GDNF → GFRA1/RET with downstream signaling through MAPK1 and AKT1, ultimately supporting neuronal recovery and axonal regeneration.
+
+# Questions and Answers
+
+**1. What sender cell did you choose, and in what tissue or biological context does it act?**
+
+The sender cell is the Schwann cell, which is found in the peripheral nervous system (PNS). Schwann cells support peripheral neurons by providing signals that promote neuronal survival, maintenance, and axon regeneration, especially during peripheral nerve repair.
+
+**2. What signaling molecule did you identify, and what evidence supports its production or presentation by the sender cell?**
+
+The signaling molecule identified is GDNF (glial cell line-derived neurotrophic factor). Schwann cells can produce and release GDNF, particularly in response to peripheral nerve injury. GDNF acts as a neurotrophic factor that supports the survival and regeneration of nearby neurons.
+
+**3. What receptor receives the signal, and which receiver cell did you select?**
+
+The receptor system is the GFRA1/RET receptor complex, involving GFRA1 (GDNF family receptor alpha-1) and RET. The receiver cell selected is the neuron, specifically a peripheral neuron receiving GDNF from the Schwann cell.
+
+**4. What type of cell-to-cell signaling is represented?**
+
+The pathway represents paracrine signaling because GDNF is released by the Schwann cell and acts on a nearby neuron rather than traveling through the bloodstream to a distant target.
+
+**5. Which proteins in your STRING network appear most relevant to the receptor-associated response? Explain briefly.**
+
+The most relevant proteins are SHC1, GRB2, MAPK1, PIK3CA, and AKT1. SHC1 and GRB2 are associated with downstream signaling from RET and can lead to activation of MAPK1. PIK3CA and AKT1 form another important pathway involved in cell survival. Together, these proteins connect GFRA1/RET activation to neuronal survival and growth responses.
+
+**6. What enriched pathway or biological process is consistent with your proposed mechanism?**
+
+The proposed mechanism is consistent with PI3K-AKT signaling and MAPK signaling, which are involved in cell survival, growth, and differentiation. These pathways are consistent with the biological processes of neuron survival and axon regeneration.
+
+**7. What did IntAct show for the molecular interaction you examined? What type of evidence was reported?**
+
+IntAct showed a positive direct interaction between GFRA1 and GDNF in Homo sapiens. The interaction was experimentally detected using ELISA, with the experiment reported as in vitro. This provides experimental evidence supporting the physical interaction between GDNF and its GFRA1 receptor/co-receptor.
+
+**8. Which parts of your final model are strongly supported, and which parts remain an inference?**
+
+The GDNF–GFRA1 interaction is strongly supported by the IntAct experimental evidence. The involvement of RET and downstream proteins such as SHC1, GRB2, MAPK1, PIK3CA, and AKT1 is also consistent with known GDNF/RET signaling. However, the complete sequence from Schwann-cell GDNF secretion → GFRA1/RET → SHC1/GRB2/MAPK1 and PIK3CA/AKT1 → axon regrowth is a proposed model, so the specific connection between all components in this particular Schwann cell–neuron context remains an inference.
+
+**9. What cellular response is expected in the receiver cell, and why?**
+
+The expected response is increased neuron survival and axon regrowth. GDNF signaling through the GFRA1/RET receptor complex activates downstream pathways such as MAPK and PI3K-AKT, which promote neuronal survival, growth, and regenerative responses. Therefore, the neuron is expected to be better supported during peripheral nerve repair.
+
+# References and database links
+
+HPA: https://www.proteinatlas.org/ENSG00000168621-GDNF/single+cell
+
+OmniPath: https://explore.omnipathdb.org/search?q=GDNF%2C&tab=interactions&species=9606
+
+STRING: https://string-db.org/cgi/network?taskId=b2GSV12GGHA2&sessionId=beYahQK91iV4&__cf_chl_tk=pEaKfoqX7s.GjyqCQr7mGU6uaidZ_FJK4VVj6Z9IlSI-1791430365-1.0.1.1-cR.znUk5v8X5ImhSI9Ytm.02.TNEO3ajwXNtKWQiRrU
+
+IntAct : https://www.ebi.ac.uk/intact/search?query=GDNF%20GFRA1
+
+Xu P, Rosen KM, Hedstrom K, Rey O, Guha S, Hart C, Corfas G. Nerve injury induces glial cell line-derived neurotrophic factor (GDNF) expression in Schwann cells through purinergic signaling and the PKC-PKD pathway. Glia. 2013;61(7):1029-1040. doi:10.1002/glia.22491. PMID: 23553603.

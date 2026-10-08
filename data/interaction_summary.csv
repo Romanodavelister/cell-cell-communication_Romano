@@ -1,1 +1,3 @@
-
+Ligand,Ligand Gene,Receptor,Receptor Gene,Sender Cell,Receiver Cell,Interaction Type,Evidence
+GDNF,GDNF,GDNF family receptor alpha-1,GFRA1,Schwann cell,Neuron,Ligand-receptor binding,IntAct GFRA1-GDNF record (human; in vitro); OmniPath (24 references); UniProt P39905
+GDNF,GDNF,RET proto-oncogene,RET,Schwann cell,Neuron,Ligand-receptor signaling,OmniPath (28 references); UniProt P39905

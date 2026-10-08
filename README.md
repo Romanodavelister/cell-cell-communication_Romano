@@ -127,3 +127,25 @@ OmniPath supports GDNF being a secreted ligand that interacts with GFRA1 and RET
 
 
 ![OmniPath intercell annotation](figures/02b_omnipath_intercell.png)
+
+# STRING network image and interpretation
+
+![String Network](figures/03_string_network.png)
+
+The STRING network shows a highly connected group of proteins involved mainly in growth factor receptor signaling. The enriched term insulin-like growth factor receptor signaling pathway had a very low FDR of 2.07 × 10⁻¹¹, indicating significant enrichment. Key connector proteins include SHC1, GRB2, PIK3CA, AKT1, and MAPK1, which link receptor activation to downstream PI3K/AKT and MAPK signaling pathways involved in cell growth, survival, proliferation, and differentiation. Overall, the dense network suggests that these proteins work together in coordinated cell-signaling processes.
+
+**Relevant enrich term:** Insulin-like growth factor receptor signaling pathway 
+
+**FDR:** 2.07 × 10⁻¹¹
+
+**5 proteins with roles**
+
+1. **SHC1** – Acts as a signaling adaptor that connects activated growth-factor receptors to downstream pathways, including the GRB2/SOS–Ras signaling cascade.
+
+2. **GRB2** – Functions as an adaptor protein that links activated cell-surface receptors to downstream signaling pathways such as Ras/MAPK.
+
+3. **PIK3CA** – Encodes the catalytic subunit of PI3K, which phosphorylates PIP2 to produce PIP3 and helps activate PI3K/Akt signaling.
+
+4. **AKT1** – A serine/threonine kinase that regulates important processes such as cell growth, proliferation, metabolism, and cell survival. 
+
+5. **MAPK1** – A MAP kinase involved in the MAPK/ERK signaling cascade, regulating processes including cell growth, survival, differentiation, and proliferation.
